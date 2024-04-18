@@ -26,12 +26,11 @@ public class GildedRose {
     public void updateQuality() {
         for (Item item : items) {
             if(specialItem(item)){
-                increaseSpecialItemQuality(item);
+                increaseQualityOfItem(item);
             }else{
-                decreaseQuality(item);
+                decreaseQualityOfItem(item);
             }
-
-            decreaseSellIn(item);
+            decreaseSellInOfItem(item);
 
         }
     }
@@ -48,7 +47,7 @@ public class GildedRose {
         return item.name.equals(("Backstage passes to a TAFKAL80ETC concert"));
     }
 
-    public void decreaseQuality(Item item){
+    public void decreaseQualityOfItem(Item item){
         if(item.quality > 0 && !isSulfuras(item)){
             item.quality--;
         }
@@ -57,7 +56,7 @@ public class GildedRose {
         }
     }
 
-    public void decreaseSellIn(Item item){
+    public void decreaseSellInOfItem(Item item){
         if(!isSulfuras(item)){
             item.sellIn--;
         }
@@ -74,22 +73,22 @@ public class GildedRose {
         return item.sellIn <= 0;
     }
 
-    public void increaseQuality(Item item){
+    public void increaseItemQuality(Item item){
         if(item.quality < MAX_QUALITY){
             item.quality++;
         }
     }
 
-    public void increaseSpecialItemQuality(Item item){
-        increaseQuality(item);
+    public void increaseQualityOfItem(Item item){
+        increaseItemQuality(item);
         if(isAgedBrie(item) && outOfDate(item)){
-            increaseQuality(item);
+            increaseItemQuality(item);
         }
 
         if(isBackstagePass(item)){
-            increaseQuality(item);
+            increaseItemQuality(item);
             if(item.sellIn < 6){
-                increaseQuality(item);
+                increaseItemQuality(item);
             }
         }
     }
