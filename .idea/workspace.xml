@@ -7,7 +7,6 @@
     <list default="true" id="a55ef2b7-adc3-4586-960b-322b837b8ac5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gildedrose/GildedRose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gildedrose/GildedRose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gildedrose/GildedRoseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gildedrose/GildedRoseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GildedRoseTest.backstagePassesQualityIs0AfterConcert">
+  <component name="RunManager" selected="JUnit.GildedRoseTest">
+    <configuration name="GildedRoseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GildedRose" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gildedrose.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gildedrose" />
+      <option name="MAIN_CLASS_NAME" value="com.gildedrose.GildedRoseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GildedRoseTest.backstagePassesQualityIncreaseBy3WhenThereAre5DaysOrLess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GildedRose" />
       <extension name="coverage">
@@ -109,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GildedRoseTest.backstagePassesSQualityIncreasesBy2WhenThereAre10DaysOrLess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GildedRoseTest.updateQualityThenDecrementsItByOneThenSell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GildedRose" />
       <extension name="coverage">
         <pattern>
@@ -119,23 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gildedrose" />
       <option name="MAIN_CLASS_NAME" value="com.gildedrose.GildedRoseTest" />
-      <option name="METHOD_NAME" value="backstagePassesSQualityIncreasesBy2WhenThereAre10DaysOrLess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GildedRoseTest.sulfurasNeverHaveToBeSoldOrHaveItSQualityDecrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GildedRose" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gildedrose.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gildedrose" />
-      <option name="MAIN_CLASS_NAME" value="com.gildedrose.GildedRoseTest" />
-      <option name="METHOD_NAME" value="sulfurasNeverHaveToBeSoldOrHaveItSQualityDecrease" />
+      <option name="METHOD_NAME" value="updateQualityThenDecrementsItByOneThenSell" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GildedRoseTest" />
+        <item itemvalue="JUnit.GildedRoseTest.updateQualityThenDecrementsItByOneThenSell" />
         <item itemvalue="JUnit.GildedRoseTest.backstagePassesQualityIs0AfterConcert" />
         <item itemvalue="JUnit.GildedRoseTest.backstagePassesQualityIncreaseDependingOnHowManyDaysLeft" />
         <item itemvalue="JUnit.GildedRoseTest.backstagePassesQualityIncreaseBy3WhenThereAre5DaysOrLess" />
-        <item itemvalue="JUnit.GildedRoseTest.backstagePassesSQualityIncreasesBy2WhenThereAre10DaysOrLess" />
-        <item itemvalue="JUnit.GildedRoseTest.sulfurasNeverHaveToBeSoldOrHaveItSQualityDecrease" />
       </list>
     </recent_temporary>
   </component>
@@ -161,5 +159,16 @@
       <updated>1713448920805</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/gildedrose/GildedRoseTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
