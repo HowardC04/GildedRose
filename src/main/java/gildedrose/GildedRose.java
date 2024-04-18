@@ -39,8 +39,8 @@ public class GildedRose {
         return item.name.equals("Aged Brie");
     }
 
-    public boolean isSulfuras(Item item){
-        return item.name.equals(("Sulfuras, Hand of Ragnaros"));
+    public boolean isNotSulfuras(Item item){
+        return !item.name.equals(("Sulfuras, Hand of Ragnaros"));
     }
 
     public boolean isBackstagePass(Item item){
@@ -48,7 +48,7 @@ public class GildedRose {
     }
 
     public void decreaseQualityOfItem(Item item){
-        if(item.quality > 0 && !isSulfuras(item)){
+        if(item.quality > 0 && isNotSulfuras(item)){
             item.quality--;
         }
         if(outOfDate(item)){
@@ -57,7 +57,7 @@ public class GildedRose {
     }
 
     public void decreaseSellInOfItem(Item item){
-        if(!isSulfuras(item)){
+        if(isNotSulfuras(item)){
             item.sellIn--;
         }
         if(isBackstagePass(item) && item.sellIn <= 0){
