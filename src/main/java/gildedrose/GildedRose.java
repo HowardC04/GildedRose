@@ -7,6 +7,11 @@ public class GildedRose {
         this.items = items;
     }
 
+    /**
+     * Gets the first item that matches it's name
+     * @param itemName Name of item to get
+     * @return The first item in items with the same name
+     */
     public Item getItem(String itemName){
         for(Item item : items){
             if(itemName.equals(item.name)){
