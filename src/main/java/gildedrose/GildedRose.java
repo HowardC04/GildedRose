@@ -31,7 +31,6 @@ public class GildedRose {
                 decreaseQualityOfItem(item);
             }
             decreaseSellInOfItem(item);
-
         }
     }
 
